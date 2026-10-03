@@ -10,7 +10,7 @@ class Solution:
         y_predicted = float(init)
 
         for i in range(iterations):
-            gradient = 2 * y_predicted
-            y_predicted = y_predicted - learning_rate * gradient
+            gradient = 2 * y_predicted # ∇f slope
+            y_predicted = y_predicted - learning_rate * gradient # x - lr·∇f
 
         return round(y_predicted, 5)
